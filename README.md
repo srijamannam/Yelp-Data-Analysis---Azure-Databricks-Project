@@ -5,12 +5,14 @@ Yelp is a community review site and an American multinational firm based in San 
 Due to the bulk of the data, this project only selects a subset of Yelp data in a zip file named 'dataset.zip,' which comprises three JSON files, including 'business.json', which provides business data such as location data, attributes, and categories.
 
 **Technologies**
-Language: Python3
 
-Services: Azure Data Factory, Azure Databricks, Azure Data Lake Storage
+**Language:** Python3
+
+**Services:** Azure Data Factory, Azure Databricks, Azure Data Lake Storage
 
 
 𝗗𝗮𝘁𝗮 𝗔𝗻𝗮𝗹𝘆𝘀𝗶𝘀:
+
 From the Yelp website, the academic dataset is downloaded containing business, checkin, review, tips and users.
 The resource manager is created in Azure to categorise the resources required followed by Storage account for storing data required and the Creation of containers for uploading the dataset.
 The pipeline is created to copy the data from Azure storage to Azure data lake storage in the Azure data factory.
@@ -20,12 +22,15 @@ In the transformation and load process, the uploaded dataset in Spark is read in
 Finally, data is analyzed into Spark in Databricks deducing recommendations and data are visualized using bar charts.
 
 
-𝗖𝗼𝗻𝘃𝗲𝗿𝘀𝗶𝗼𝗻: During the conversion process, the Yelp academic dataset JSON file is converted to Parquet format and further Parquet format is converted to the Delta format for further data analysis in Databricks.
+𝗖𝗼𝗻𝘃𝗲𝗿𝘀𝗶𝗼𝗻: 
+During the conversion process, the Yelp academic dataset JSON file is converted to Parquet format and further Parquet format is converted to the Delta format for further data analysis in Databricks.
 
-𝗧𝗿𝗮𝗻𝘀𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻 𝗮𝗻𝗱 𝗟𝗼𝗮𝗱: During the transformation and load process, the uploaded dataset in Spark is read into Spark data frames. And dataset is finally analyzed in Databricks into Spark and further recommendations are deduced.
+𝗧𝗿𝗮𝗻𝘀𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻 𝗮𝗻𝗱 𝗟𝗼𝗮𝗱: 
+During the transformation and load process, the uploaded dataset in Spark is read into Spark data frames. And dataset is finally analyzed in Databricks into Spark and further recommendations are deduced.
 
 
 𝗔𝗽𝗽𝗿𝗼𝗮𝗰𝗵
+
 1) Read yelp datasets in ADLS and convert JSON to parquet for better performance.
 2) Convert JSON to Delta Format.
 3) Total records in each dataset.
