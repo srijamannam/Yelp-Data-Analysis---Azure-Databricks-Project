@@ -4,9 +4,10 @@ Yelp is a community review site and an American multinational firm based in San 
 
 Due to the bulk of the data, this project only selects a subset of Yelp data in a zip file named 'dataset.zip,' which comprises three JSON files, including 'business.json', which provides business data such as location data, attributes, and categories.
 
-**T𝗲𝗰𝗵 𝗦𝘁𝗮𝗰𝗸**
+**Technologies**
 Language: Python3
-Services: Azure Data factory, Azure Databricks, Azure Data Lake Storage
+
+Services: Azure Data Factory, Azure Databricks, Azure Data Lake Storage
 
 
 𝗗𝗮𝘁𝗮 𝗔𝗻𝗮𝗹𝘆𝘀𝗶𝘀:
