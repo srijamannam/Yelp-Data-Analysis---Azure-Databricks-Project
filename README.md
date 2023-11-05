@@ -4,7 +4,7 @@ Yelp is a community review site and an American multinational firm based in San 
 
 Due to the bulk of the data, this project only selects a subset of Yelp data in a zip file named 'dataset.zip,' which comprises three JSON files, including 'business.json', which provides business data such as location data, attributes, and categories.
 
-T𝗲𝗰𝗵 𝗦𝘁𝗮𝗰𝗸
+**T𝗲𝗰𝗵 𝗦𝘁𝗮𝗰𝗸**
 Language: Python3
 Services: Azure Data factory, Azure Databricks, Azure Data Lake Storage
 
@@ -17,6 +17,7 @@ The Databricks workspace and cluster is created, accessed and configured Azure d
 The conversion process is done by converting the Yelp academics data file from JSON format to Parquet format and further converting it to Delta format for smooth analysis.
 In the transformation and load process, the uploaded dataset in Spark is read into Spark data frames.
 Finally, data is analyzed into Spark in Databricks deducing recommendations and data are visualized using bar charts.
+
 
 𝗖𝗼𝗻𝘃𝗲𝗿𝘀𝗶𝗼𝗻: During the conversion process, the Yelp academic dataset JSON file is converted to Parquet format and further Parquet format is converted to the Delta format for further data analysis in Databricks.
 
